@@ -1,0 +1,32 @@
+
+import java.util.*;
+class Main 
+{
+  public static void main(String[] args) 
+  {
+    
+    double pi = 3;
+    double a = 3;
+    boolean even = false;
+    double turn;
+
+      while (a <= 9000) {
+        turn = (4/((Math.pow(a, 3)) - (a)));
+
+        if(even)
+        {
+          turn = turn*-1;
+          even = false;
+        } 
+        else 
+        {
+          even = true;
+        }
+        pi = pi + turn;
+        a = a + 2;
+      }
+    System.out.println(pi);
+    
+    
+  }
+}
